@@ -1,0 +1,41 @@
+.screen{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+}
+
+label{
+    color:white;
+    text-align: center;
+    width: 100%;
+    font-family: 'Quicksand', sans-serif;
+}
+
+input{
+    color:white;
+    text-align: center;
+    width: 100%;
+    font-family: 'Quicksand', sans-serif;
+    background-color: #4b4b4b;
+    border-radius: 10px;
+}
+
+input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn{
+    width: 100%;
+    margin-top: 0.5vh;
+    border-radius: 10px;
+}
+
+img{
+    max-width: 40vw;
+    max-height: 40vw;
+    border-radius: 10px;
+    border: 5px solid #4b4b4b;
+}

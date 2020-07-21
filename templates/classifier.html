@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="{{url_for('static', filename='css/classifier.css')}}">
+    <Title>Classifier Result</Title>
+{% endblock %}
+
+
+{% block body %}
+    <div class="screen">
+        {% if prediction %}
+        <h1>Congratulations!, <br>It's a {{prediction}}</h1>
+        <div class="align-center">
+            <img src="{{url_for('static', filename=last_file[7:])}}" />
+        </div>
+        <div class="align-center">
+            <a href="/" class="btn btn-light">Try Again</a>
+        </div>
+        {% else %}
+        <div>
+            <h1>Something went wrong<br>☹</h1>
+        </div>
+        {% endif %}
+    </div>  
+{% endblock %}

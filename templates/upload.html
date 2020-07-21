@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="{{url_for('static', filename='css/upload.css')}}">
+    <Title>Upload</Title>
+{% endblock %}
+
+
+{% block body %}
+    <div class="screen">
+        <form method="POST" enctype="multipart/form-data">
+            <div class="form-group">
+                {% if last_file %}
+                <div class="align-center">
+                    <img src="{{url_for('static', filename=last_file[7:])}}"/>
+                </div>
+                <div class="align-center">
+                    <a class='btn btn-light' href="/restart">Select other Image</a>   
+                </div>     
+                <div class="align-center">
+                    <a class='btn btn-primary' href="/classifier">Continue</a>  
+                </div>
+                {% else %}
+                <div>
+                    <label for="file">Select your Image</label>
+                    <input type="file" class="form-control-file" id="file" name="sample" required>
+                    <input type="submit" value="Upload" class="btn btn-light full">
+                </div>
+                {% endif %}
+            </div>
+        </form>
+    </div>  
+{% endblock %}

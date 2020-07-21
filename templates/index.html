@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="{{url_for('static', filename='css/index.css')}}">
+    <Title>Index</Title>
+{% endblock %}
+
+
+{% block body %}
+    <div class="screen">
+        <div>
+            <div class="align-center">
+                <img class="logo" src="{{url_for('static',filename='img/logo.png')}}">
+            </div>
+            <h1 class="title">Is it a dog or a cat?</h1>
+            <div class="align-center">
+                <a class="btn btn-light" href="/upload">Let's Find Out</a>
+            </div>
+        </div>  
+    </div>  
+{% endblock %}

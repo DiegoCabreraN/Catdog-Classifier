@@ -1,0 +1,14 @@
+img{
+    max-height: 40vh;
+    max-width: 40vw;
+    margin: 4vh 0 4vh 0;
+    border-radius: 10px;
+    border: 5px solid #4b4b4b;
+}
+
+h1{
+    color: white;
+    text-align: center;
+    margin-top: 10vh;
+    font-family: 'Quicksand', sans-serif;
+}

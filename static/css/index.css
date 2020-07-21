@@ -1,0 +1,17 @@
+.screen{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+}
+
+.title{
+    font-family: 'Quicksand', sans-serif;
+    color: white;
+    text-align: center;
+    margin: 5vh 0px 5vh 0px;
+}
+
+.logo{
+    height: 30vh;
+}
